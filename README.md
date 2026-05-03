@@ -1,20 +1,68 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Vịt Học (Duck Learn) - Nền Tảng Học Ngôn Ngữ Thông Minh
 
-# Run and deploy your AI Studio app
+Vịt Học là một ứng dụng học ngôn ngữ (Tiếng Anh và Tiếng Trung) hiện đại, được thiết kế với giao diện trực quan, cá nhân hóa trải nghiệm người dùng và hỗ trợ quản trị viên theo dõi tiến độ học tập hiệu quả.
 
-This contains everything you need to run your app locally.
+## 🚀 Tính Năng Chính
 
-View your app in AI Studio: https://ai.studio/apps/85d2970e-9955-4736-9569-cc4474c28652
+### 1. Trải Nghiệm Người Dùng Đa Dạng
+- **Dành cho Khách (Guest)**: Khám phá các khóa học nổi bật và dùng thử các bài học miễn phí.
+- **Dành cho Học Viên (Student)**: 
+  - Bảng điều khiển cá nhân hóa theo trình độ.
+  - Theo dõi tiến độ học tập trực quan với thanh tiến độ.
+  - Nhận mã giảm giá linh hoạt (ENG20, CHI20) khi hoàn thành các khóa học thử.
+- **Dành cho Quản Trị Viên (Admin)**:
+  - Quản lý danh sách khóa học (CRUD).
+  - Hệ thống giám sát độ tập trung (Live Focus Monitor) theo thời gian thực.
+  - Báo cáo lỗi sai thường gặp của học viên.
+  - Xuất dữ liệu báo cáo ra file CSV dễ dàng.
 
-## Run Locally
+### 2. Hệ Thống Thanh Toán & Giảm Giá Thông Minh
+- Giỏ hàng linh hoạt.
+- Áp dụng mã giảm giá riêng biệt cho từng khóa học dựa trên ngôn ngữ (Tiếng Anh/Tiếng Trung).
+- Tự động tính toán tổng tiền sau giảm giá.
 
-**Prerequisites:**  Node.js
+### 3. Giao Diện & Trải Nghiệm
+- Thiết kế theo phong cách hiện đại với Tailwind CSS.
+- Hiệu ứng chuyển động mượt mà với Framer Motion.
+- Biểu tượng trực quan từ Lucide React.
 
+## 🛠 Công Nghệ Sử Dụng
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **Frontend**: React 18+, Vite
+- **Styling**: Tailwind CSS
+- **Animation**: motion/react (Framer Motion)
+- **Icons**: Lucide React
+- **Language**: TypeScript
+
+## 📦 Cài Đặt
+
+1. **Clone repository**:
+   ```bash
+   git clone <repository-url>
+   cd vit-hoc
+   ```
+
+2. **Cài đặt dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Chạy ở chế độ phát triển**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Build dự án**:
+   ```bash
+   npm run build
+   ```
+
+## 📂 Cấu Trúc Thư Mục
+
+- `src/components/`: Chứa các component giao diện (Auth, Admin, Course, Cart, v.v.)
+- `src/lib/`: Các hàm tiện ích (Export CSV, v.v.)
+- `src/constants.ts`: Dữ liệu mẫu và các hằng số của hệ thống.
+- `src/types.ts`: Định nghĩa Type/Interface cho TypeScript.
+
+---
+Phát triển bởi Đội ngũ Vịt Học. Quack Quack! 🦆
