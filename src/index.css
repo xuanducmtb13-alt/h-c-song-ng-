@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-yellow-50: #fffdf2;
+  --color-yellow-100: #fff9d9;
+  --color-yellow-200: #ffefad;
+  --color-yellow-300: #ffde70;
+  --color-yellow-400: #fcc233;
+  --color-yellow-500: #f5a60c;
+  --color-yellow-600: #d98207;
+  --color-yellow-700: #b45f09;
+  --color-yellow-800: #924a0e;
+  --color-yellow-900: #783e0f;
+  --color-yellow-950: #451f03;
+}
+
+@layer base {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply bg-yellow-50/20 text-slate-800;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-yellow-200/50 rounded-full;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-yellow-300;
+}
+
+::selection {
+  @apply bg-yellow-200 text-yellow-900;
+}

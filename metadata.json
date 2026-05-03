@@ -1,0 +1,6 @@
+{
+  "name": "Vịt Học: Nền tảng học Tiếng Anh & Trung",
+  "description": "Hệ thống học tập trực tuyến dành cho người Việt, chuyên sâu về Tiếng Anh và Tiếng Trung với lộ trình cá nhân hóa, chatbot AI và giáo trình chuẩn.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": []
+}
